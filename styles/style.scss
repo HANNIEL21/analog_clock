@@ -60,10 +60,19 @@ body {
     right: 10px;
     bottom: 10px;
     border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     box-shadow: 10px 50px 70px rgba(0, 0, 0, 0.25),
         inset 5px 5px 10px rgba(0, 0, 0, 0.5),
         inset 5px 5px 20px rgba(0, 0, 0, 0.2),
         inset -5px -5px 15px rgba(0, 0, 0, 0.75);
+
+    .container1 {
+        font-size: 25px;
+        font-weight: bold;
+        color:  rgba(0, 0, 0, 0.749);
+    }
 }
 
 .selectbox{
@@ -189,4 +198,28 @@ body {
     background: var(--clr);
     box-shadow: 0 0 20px var(--clr),
         0 0 60px var(--clr);
+}
+
+.text {
+    position: absolute;
+    bottom: 50px;
+    left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    p{
+        color: #2f363e;
+        font-size: 2rem;
+        font-weight: bold;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5),
+                    -1px -1px 1px rgba(0, 0, 0, 0.5);
+    }
+
+    p sup{
+        background: rgba(255, 255, 255, 0.5);
+        border-radius: 5px;
+        padding: 4px 5px;
+        
+    }
 }

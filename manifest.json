@@ -1,0 +1,20 @@
+{
+    "name": "CLOCK PWA",
+    "short_name": "clock",
+    "start_url": ".",
+    "theme_color": "#1c2026",
+    "background_color": "#2f363e",
+    "display" : "standalone",
+    "icons": [
+        {
+            "src": "img/logo1.png",
+            "sizes": "128x128",
+            "type": "image/png"
+        },
+        {
+            "src": "img/logo2.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}

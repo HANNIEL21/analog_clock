@@ -5,7 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#1c2026">
+    <link rel="apple-touch-icon" href="./img/logo1.png">
+    <link rel="shortcut icon" href="./img/logo1.png" type="image/x-icon">
     <link rel="stylesheet" href="./styles/style.css">
+    <link rel="manifest" href="manifest.json">
     <title>PWA Clock</title>
 </head>
 
@@ -13,7 +17,7 @@
 
     <div class="box1">
         <div class="temp">
-            <span id="temp"></span>
+            <span id="temp">0</span>
             <sup>&deg;c</sup>
         </div>
         <div class="icon">
@@ -21,8 +25,15 @@
         </div>
     </div>
 
-    <div class="selectbox">
-        <input type="search" name="search">
+    <form class="selectbox">
+        <input type="search" name="search" id="input">
+    </form>
+
+    <div class="text">
+        <p>
+            <span id="city"></span>
+            <sup id="country"></sup>
+        </p>
     </div>
 
     <div class="container">
@@ -47,10 +58,14 @@
     </div>
 
     <div class="box2">
-            
+        <div class="container1">
+            <span id="hour">00</span>
+            <span>:</span>
+            <span id="min">00</span>
+        </div>
     </div>
 
-    <script src="./script/script.js"></script>
+    <script src="./script/script.js" type="module"></script>
 </body>
 
 </html>
